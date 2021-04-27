@@ -1,1 +1,142 @@
+@charset "UTF-8";
 
+/* Base */
+
+	body {
+		background-color: #935d8c;
+	}
+
+/* Mise en page (couleur) */
+
+	body, input, select, textarea {
+		color: rgba(255, 255, 255);
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 13pt;
+		font-weight: 200;
+		line-height: 1.65;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+		border-bottom: dotted 1px rgba(255, 255, 255);
+		-moz-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	}
+
+	h3 {
+		font-size: 1em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+	h5 {
+		font-size: 0.9em;
+	}
+
+	h6 {
+		font-size: 0.7em;
+	}
+
+	sub {
+		font-size: 0.8em;
+		position: relative;
+		top: 0.5em;
+	}
+
+	sup {
+		font-size: 0.8em;
+		position: relative;
+		top: -0.5em;
+	}
+
+/* Button */
+	.button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: #FF6382;
+		border: 0;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 200;
+		height: 2.85em;
+		line-height: 2.95em;
+		padding: 0 1.5em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+		.button:hover {
+			background-color: #ff7c96;
+		}
+/* Mise en page (principal)*/
+
+	#wrapper {
+		max-width: 68em;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 2em;
+		-moz-transition: opacity 1s ease, -moz-filter 1s ease;
+		-webkit-transition: opacity 1s ease, -webkit-filter 1s ease;
+		-ms-transition: opacity 1s ease, -ms-filter 1s ease;
+	}
+
+	body.is-loading #wrapper {
+		-moz-filter: blur(1px);
+		-webkit-filter: blur(1px);
+		-ms-filter: blur(1px);
+	}
+
+	body.is-covered #wrapper {
+		-moz-filter: blur(3px);
+		-webkit-filter: blur(3px);
+		-ms-filter: blur(3px);
+	}
+
+
+/* Header */
+
+	#header {
+		text-align: center;
+		padding: 6em 0 4em 0;
+	}
+
+		#header .avatar {
+			display: inline-block;
+			margin: 0 0 2em 0;
+			padding: 0.5em;
+		}
+
+			#header .avatar img {
+				display: block;
+				width: 10em;
+			}
+
+			#header {
+				padding: 4em 0 2em 0;
+			}
+
+/* Bas de la page */
+
+	#footer {
+		text-align: center;
+		padding: 4em 0 4em 0;
+	}
+
+		#footer:before {
+			content: '';
+			width: 10em;
+			display: block;
+			margin: 0 auto 3em auto;
+		}
+
+			#footer {
+				padding: 2em 0 2em 0;
+			}
